@@ -1,0 +1,106 @@
+# Environment and Configuration Files
+.env
+.env.local
+.env.*.local
+config.php
+config_local.php
+settings.php
+database.php
+
+# Sensitive Data
+*.key
+*.pem
+*.crt
+credentials.json
+secrets.json
+
+# PHP
+vendor/
+composer.lock
+*.log
+
+# Node.js / NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.sublime-project
+*.sublime-workspace
+
+# Build and Cache
+build/
+dist/
+.cache/
+cache/
+*.cache
+
+# Session and Temporary Files
+sessions/
+tmp/
+temp/
+uploads/tmp/
+*.tmp
+
+# Logs
+logs/
+*.log
+error.log
+debug.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.sql
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*~
+
+# OS Generated Files
+.AppleDouble
+.LSOverride
+.TemporaryItems
+
+# XAMPP specific (if needed)
+/phpmyadmin/
+/webalizer/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
+.DS_Store
+.AppleDouble
+.LSOverride
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
