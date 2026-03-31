@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Merry Meal - Restaurant Rider Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Logo.png">
+	<link rel="stylesheet" href="./css/chartist.min.css">
+    <link href="./css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+				<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo8/dist/../src/media/svg/icons/Cooking/Fork-spoon.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="46px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<rect x="0" y="0" width="50" height="50"/>
+						<path d="M15,3 L15.4502481,7.5024814 C15.4784917,7.78491722 15.7161555,8 16,8 C16.2838445,8 16.5215083,7.78491722 16.5497519,7.5024814 L17,3 L18,3 L18.4502481,7.5024814 C18.4784917,7.78491722 18.7161555,8 19,8 C19.2838445,8 19.5215083,7.78491722 19.5497519,7.5024814 L20,3 L21,3 L21,7.5 C21,9.43299662 19.4329966,11 17.5,11 C15.5670034,11 14,9.43299662 14,7.5 L14,3 L15,3 Z" fill="#AD0000"/>
+						<path d="M17.5,13 L17.5,13 C18.0610373,13 18.5243493,13.4382868 18.55547,13.9984604 L18.916795,20.5023095 C18.9602658,21.2847837 18.3611851,21.9543445 17.5787108,21.9978153 C17.5524991,21.9992715 17.5262521,22 17.5,22 L17.5,22 C16.7163192,22 16.0810203,21.3647011 16.0810203,20.5810203 C16.0810203,20.5547682 16.0817488,20.5285212 16.083205,20.5023095 L16.44453,13.9984604 C16.4756507,13.4382868 16.9389627,13 17.5,13 Z" fill="#000000" />
+						<path d="M7.5,14 L7.5,14 C8.06209761,14 8.5273156,14.4370496 8.56237829,14.9980526 L8.90643257,20.5029211 C8.95497952,21.2796724 8.3646533,21.9487088 7.58790204,21.9972557 C7.55863704,21.9990848 7.52932209,22 7.5,22 L7.5,22 C6.72173313,22 6.09082317,21.36909 6.09082317,20.5908232 C6.09082317,20.5615011 6.09173837,20.5321861 6.09356743,20.5029211 L6.43762171,14.9980526 C6.4726844,14.4370496 6.93790239,14 7.5,14 Z" fill="#000000" />
+						<path d="M7.5,12 C5.56700338,12 4,9.43299662 4,7.5 C4,5.56700338 5.56700338,3 7.5,3 C9.43299662,3 11,5.56700338 11,7.5 C11,9.43299662 9.43299662,12 7.5,12 Z M7.5095372,4.60103244 L7.56069005,9.94758244 C8.61891495,9.8578583 9.45855912,8.97981222 9.47749614,7.8949109 C9.49728809,6.76103086 8.63275447,4.70470991 7.5095372,4.60103244 Z" fill="#AD0000"/>
+					</g>
+				</svg><!--end::Svg Icon--></span>
+				<div class="brand-title">MerryMeal</div>
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="dashboard_bar">
+                                Order Detail
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item">
+								
+							</li>
+                            
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/rd1.jpg" width="20" alt=""/>
+									<div class="header-info">
+										<span class="fs-20 font-w500">Dilki Tharuka</span>
+										<small>Delivery Women</small>
+									</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="../login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li>
+                        <ul aria-expanded="false">
+							<li><a href="index.html">Dashboard </a></li>
+							
+							<li><a href="orders-list.php">Orders list</a></li>
+							<li><a href="order-detail.html">Order Detail</a></li>
+							
+							
+							<li><a href="reviews.php">Reviews</a></li>
+							<li><a href="./app-profile.html">Profile</a></li>
+								
+						</ul>
+
+                    </li>
+                    
+                            
+            
+				
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				<div class="d-flex mb-3 mb-lg-4 align-items-center">
+					<div class="mr-auto d-none d-lg-block">
+						<div class="d-flex flex-wrap align-items-center">	
+							<h3 class="text-black font-w600 mb-0 fs-28 mr-5">0001</h3>
+							<div class="d-flex">
+								<a class="mb-0 text-black font-w500 fs-18" href="#">Orders / </a>
+								<a class="mb-0 font-w400 fs-18 ml-2" href="#" > Order Detaills </a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-xl-3 col-xxl-4">
+						<div class="row">
+							<div class="col-xl-12 col-md-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="text-center order-media">
+											<img src="images/profile/Untitled-2.jpg" alt="">
+											<div>
+												<h4 class="text-black mb-3 font-w600">Hiran Thathsara</h4>
+												<a href="javascript:void(0);" class="btn btn-outline-primary btn-sm">Customer</a>
+											</div>
+										</div>
+									</div>
+									<div class="card-body border-bottom">
+										<div class="media align-items-center">
+											<svg class="mr-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9993 17.4712V20.7831C23.0006 21.0906 22.9375 21.3949 22.814 21.6766C22.6906 21.9583 22.5096 22.2112 22.2826 22.419C22.0556 22.6269 21.7876 22.7851 21.4958 22.8836C21.2039 22.9821 20.8947 23.0187 20.5879 22.991C17.1841 22.6219 13.9145 21.4611 11.0418 19.6019C8.36914 17.9069 6.10319 15.6455 4.40487 12.9781C2.53545 10.0981 1.37207 6.81909 1.00898 3.40674C0.981336 3.10146 1.01769 2.79378 1.11572 2.50329C1.21376 2.2128 1.37132 1.94586 1.57839 1.71947C1.78546 1.49308 2.03749 1.31221 2.31843 1.18836C2.59938 1.06451 2.90309 1.0004 3.21023 1.00011H6.52869C7.06551 0.994834 7.58594 1.18456 7.99297 1.53391C8.4 1.88326 8.66586 2.36841 8.74099 2.89892C8.88106 3.9588 9.14081 4.99946 9.5153 6.00106C9.66413 6.39619 9.69634 6.82562 9.60812 7.23847C9.51989 7.65131 9.31494 8.03026 9.01753 8.33042L7.61272 9.73245C9.18739 12.4963 11.4803 14.7847 14.2496 16.3562L15.6545 14.9542C15.9552 14.6574 16.3349 14.4528 16.7486 14.3648C17.1622 14.2767 17.5925 14.3089 17.9884 14.4574C18.992 14.8312 20.0348 15.0904 21.0967 15.2302C21.6341 15.3058 22.1248 15.576 22.4756 15.9892C22.8264 16.4024 23.0128 16.9298 22.9993 17.4712Z" stroke="#566069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+											<h4 class="mb-0 text-black">+94 71924 3296</h4>
+										</div>
+									</div>
+									<div class="card-body border-bottom">
+										<div class="media align-items-center">
+											<svg class="mr-4" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-width: 24px;">
+												<path d="M28 13.3333C28 22.6667 16 30.6667 16 30.6667C16 30.6667 4 22.6667 4 13.3333C4 10.1507 5.26428 7.09848 7.51472 4.84805C9.76516 2.59761 12.8174 1.33333 16 1.33333C19.1826 1.33333 22.2348 2.59761 24.4853 4.84805C26.7357 7.09848 28 10.1507 28 13.3333Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M16 17.3333C18.2091 17.3333 20 15.5425 20 13.3333C20 11.1242 18.2091 9.33333 16 9.33333C13.7909 9.33333 12 11.1242 12 13.3333C12 15.5425 13.7909 17.3333 16 17.3333Z" stroke="#3E4954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+											<h4 class="mb-0 text-black">Long Horn St. Avenue 351636 London</h4>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-xl-12 col-md-6">
+								<div class="card">
+									<div class="card-header border-0">
+										<h4 class="text-black font-w600">Delivery Women</h4>
+									</div>
+									<div class="card-body">
+										<div class="text-center order-media">
+											<img src="images/profile/rd1.jpg" alt="">
+											<div>
+												<h4 class="mb-3 font-w600">Dilki Tharuka</h4>
+												<span class="fs-14 font-w400">Join since June 20, 2021</span>
+											</div>
+										</div>
+										<div class="order-social">
+											<ul class="d-flex justify-content-center">
+												<li><a href="javascript:void(0);"><i class="las la-phone"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="las la-map-marker"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-xxl-8">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-body p-0">
+										<div class="table-responsive order-list card-table">
+											<table class="table items-table table-responsive-md">
+												<tbody>
+													<tr class="bg-primary">
+														<th class="text-black font-w500 fs-20">Items</th>
+														<th style="width:10%;" class="text-black font-w500 fs-20">Quantity</th>
+														
+														<th></th>
+													</tr>
+													<tr>
+														<td>
+															<div class="media">
+																<a href="ecom-product-detail.html"><img class="mr-3 img-fluid rounded" src="images/card/Untitled-6.jpg" alt="DexignZone"></a>
+																<div class="media-body">
+																	
+																	<h5 class="mt-0 mb-2 mb-sm-3"><a class="text-black" href="ecom-product-detail.html">Mushroom soup</a></h5>
+																	<div class="star-review d-flex fs-14">
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-gray"></i>
+																		<i class="fa fa-star text-gray"></i>
+																		<span class="ml-3 text-dark">(454 revies)</span>
+																	</div>
+																</div>
+															</div>
+														</td>
+														<td>
+															<h4 class="my-0  font-w600">1x</h4>
+														</td>
+														<
+															<a href="javascript:void(0);" class="ti-close fs-28 text-danger las la-times-circle"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="media">
+																<a href="ecom-product-detail.html"><img class="mr-3 img-fluid rounded" src="images/card/Untitled-4.jpg" alt="DexignZone"></a>
+																<div class="media-body">
+																	
+																	<h5 class="mt-0 text-black  mb-2 mb-sm-3"><a class="text-black" href="ecom-product-detail.html">Watermelon juice with ice</a></h5>
+																	<div class="star-review d-flex fs-14">
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-orange"></i>
+																		<i class="fa fa-star text-gray"></i>
+																		<i class="fa fa-star text-gray"></i>
+																		<span class="ml-3 text-dark">(454 revies)</span>
+																	</div>
+																</div>
+															</div>
+														</td>
+														<td>
+															<h4 class="my-0 font-w600">3x</h4>
+														</td>
+														
+															<a href="javascript:void(0);" class="ti-close fs-28 text-danger las la-times-circle"></a>
+														</td>
+													</tr>
+													<tr>
+														
+														
+														
+															<a href="javascript:void(0);" class="ti-close fs-28 text-danger las la-times-circle"></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="widget-timeline-icon">
+										<ul class="timeline">
+											<li>
+												<div class="icon bg-primary"></div>
+												<a class="timeline-panel text-muted" href="#">
+													<h4 class="mb-2 mt-0">Prepared</h4>
+													
+												</a>
+											</li>
+											
+											<li class="border-success">
+												<div class="icon bg-primary"></div>
+												<a class="timeline-panel text-muted" href="#">
+													<h4 class="mb-2 mt-0">On Delivery</h4>
+													
+												</a>
+											</li>
+											<li>
+												<div class="icon bg-success"></div>
+												<a class="timeline-panel text-muted" href="#">
+													<h4 class="mb-2 mt-0">Order Delivered</h4>
+													
+												</a>
+											</li>
+										</ul>	
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="row">
+									<div class="col-xl-6 col-xxl-12">
+										<div class="card map-card">
+											<div class="card-header">
+												<div>
+													<h4 class="text-black font-w600 mb-0">Track Orders</h4>
+													
+												</div>
+											</div>
+											<div class="card-body">
+												<img src="images/map.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-6 col-xxl-12">
+										<div class="card">
+											<div class="card-header border-0 pb-0">
+												<h4 class="text-black font-w600">Customer Favourite</h4>
+											</div>
+											<div class="card-body">
+												<div class="row">
+													<div class="col-6">
+														<div class="text-center p-3">
+															<div class="d-inline-block position-relative donut-chart-sale mb-2">
+																<span class="donut1" data-peity='{ "fill": ["rgb(255, 201, 12,1)", "rgba(239, 239, 239, 1)"],   "innerRadius": 42, "radius": 10}'>5/8</span>
+																<small class="text-black">66%</small>
+															</div>
+															<h4 class="fs-18 font-w600 text-black mb-0">Food</h4>
+															<span class="fs-14 d-block">45 menus</span>
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="text-center p-3">
+															<div class="d-inline-block position-relative donut-chart-sale mb-2">
+																<span class="donut1" data-peity='{ "fill": ["rgb(0,164,174,1)", "rgba(239, 239, 239, 1)"],   "innerRadius": 42, "radius": 10}'>3/8</span>
+																<small class="text-black">31%</small>
+															</div>
+															<h4 class="fs-18 font-w600 text-black mb-0">Drink</h4>
+															<span class="fs-14 d-block">21 menus</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+	</div>
+
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./js/global.min.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./js/Chart.bundle.min.js"></script>
+	
+	<!-- Chart piety plugin files -->
+    <script src="./js/jquery.peity.min.js"></script>
+	
+	
+	<script src="./js/order-detail.js"></script>
+
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	<script src="./js/demo.js"></script>
+    <script src="./js/styleSwitcher.js"></script>
+	
+</body>
+</html>

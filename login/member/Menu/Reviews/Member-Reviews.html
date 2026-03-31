@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Member Reviews Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- google fonts -->
+        <link rel = "stylesheet" href = "../assets/fonts/font.css">
+        <!-- Font awesome js -->
+        <link rel = "stylesheet" href = "../assets/font-awesome/all.css">
+        <!-- custom style css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- custom reviews css -->
+        <link rel="stylesheet" href="../Reviews/Reviews.css">
+        <!-- custom footer css -->
+        <link rel="stylesheet" href="../css/Footer.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial;
+              margin: 0 auto; /* Center website */
+              padding: 20px;
+            }
+            
+            .heading {
+              font-size: 25px;
+              margin-right: 25px;
+            }
+            
+            .fa {
+              font-size: 25px;
+            }
+            
+            .checked {
+              color: orange;
+            }
+            
+            /* Three column layout */
+            .side {
+              float: left;
+              width: 15%;
+              margin-top:10px;
+            }
+            
+            .middle {
+              margin-top:10px;
+              float: left;
+              width: 70%;
+            }
+            
+            /* Place text to the right */
+            .right {
+              text-align: right;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* The bar container */
+            .bar-container {
+              width: 100%;
+              background-color: #f1f1f1;
+              text-align: center;
+              color: white;
+            }
+            
+            /* Individual bars */
+            .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+            .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+            .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+            .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+            .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+            
+            /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+            @media (max-width: 400px) {
+              .side, .middle {
+                width: 100%;
+              }
+              .right {
+                display: none;
+              }
+            }
+            </style>
+    </head>
+    <body>
+        <header>
+            <!-- navbar -->
+            <nav class = "navbar">
+                <div class = "container">
+                    <div class = "brand-and-toggler">
+                    <a href = "index.html" class = "navbar-brand">
+                        <img src = "../assets/images/logo-png.png" alt = "logo">
+                        <h2>Merry Meal</h2>
+                    </a>
+                    <button type = "button" id = "navbar-toggler">
+                        <i class = "fas fa-bars"></i>
+                    </button>
+                    </div>
+                    <div class = "navbar-collapse">
+                    <ul class = "navbar-nav">
+                        <li>
+                        <a href = "#home">Home</a>
+                        </li>
+                        <li>
+                        <a href = "#about">About Us</a>
+                        </li>
+                        <li>
+                        <a href = "#menu">Menus</a>
+                        </li>
+                        <li>
+                        <a href = "#team">Team</a>
+                        </li>
+                        <li>
+                        <a href = "#contact">Contact uS</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end of navbar -->
+
+        </header>
+        <!-- end of header -->
+
+        <!-- menu section -->
+        <div class = "padding-y menu" id = "menu">
+            <div class = "container">
+                <!-- title -->
+                <div class = "title">
+                    <h2>Member Reviews</h2>
+                    <div class = "line center">
+                    <div></div>
+                    <span><i class = "fas fa-utensils"></i></span>
+                    <div></div>
+                    </div>
+                </div>
+                <!-- end of title -->
+
+                <!-- Meal Reviews and Ratings -->
+                <div class = "reviews">
+                    <span class="heading">Member Ratings</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>4.1 average based on 254 reviews.</p>
+                    <hr style="border:3px solid #f1f1f1">
+
+                    <div class="row">
+                    <div class="side">
+                        <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>150</div>
+                    </div>
+                    <div class="side">
+                        <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>63</div>
+                    </div>
+                    <div class="side">
+                        <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>15</div>
+                    </div>
+                    <div class="side">
+                        <div>2 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>6</div>
+                    </div>
+                    <div class="side">
+                        <div>1 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>20</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- end of Meal Reviews and Ratings -->
+
+                <div class="container_reviews">
+                    <form action="action_page.php">
+                  
+                      <label for="fname">Full Name</label>
+                      <label for="email">Email</label><br>
+                      <input type="text" id="fname" name="fullName" placeholder="Your full name..">
+                  
+                      
+                      <input type="email" id="email" name="email" placeholder="Your email.."><br>
+                
+                      <label for="subject">Review</label><br>
+                      <textarea id="subject" name="subject" placeholder="Add your reviews.." style="height:150px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stating footer -->
+		<footer class="footer-distributed">
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					<a href="#">Blog</a>
+
+					<a href="#">Pricing</a>
+
+					<a href="#">About</a>
+
+					<a href="#">Faq</a>
+
+					<a href="#">Contact</a>
+				</p>
+
+				<p>Merry Meal &copy; 2015</p>
+			</div>
+		</footer>
+        <!-- end of footer -->
+    </body>
+</html>

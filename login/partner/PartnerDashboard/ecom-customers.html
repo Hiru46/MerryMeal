@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Partner Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.php" class="brand-logo">
+                <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo8/dist/../src/media/svg/icons/Cooking/Fork-spoon.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="46px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<rect x="0" y="0" width="50" height="50"/>
+						<path d="M15,3 L15.4502481,7.5024814 C15.4784917,7.78491722 15.7161555,8 16,8 C16.2838445,8 16.5215083,7.78491722 16.5497519,7.5024814 L17,3 L18,3 L18.4502481,7.5024814 C18.4784917,7.78491722 18.7161555,8 19,8 C19.2838445,8 19.5215083,7.78491722 19.5497519,7.5024814 L20,3 L21,3 L21,7.5 C21,9.43299662 19.4329966,11 17.5,11 C15.5670034,11 14,9.43299662 14,7.5 L14,3 L15,3 Z" fill="#AD0000"/>
+						<path d="M17.5,13 L17.5,13 C18.0610373,13 18.5243493,13.4382868 18.55547,13.9984604 L18.916795,20.5023095 C18.9602658,21.2847837 18.3611851,21.9543445 17.5787108,21.9978153 C17.5524991,21.9992715 17.5262521,22 17.5,22 L17.5,22 C16.7163192,22 16.0810203,21.3647011 16.0810203,20.5810203 C16.0810203,20.5547682 16.0817488,20.5285212 16.083205,20.5023095 L16.44453,13.9984604 C16.4756507,13.4382868 16.9389627,13 17.5,13 Z" fill="#000000" />
+						<path d="M7.5,14 L7.5,14 C8.06209761,14 8.5273156,14.4370496 8.56237829,14.9980526 L8.90643257,20.5029211 C8.95497952,21.2796724 8.3646533,21.9487088 7.58790204,21.9972557 C7.55863704,21.9990848 7.52932209,22 7.5,22 L7.5,22 C6.72173313,22 6.09082317,21.36909 6.09082317,20.5908232 C6.09082317,20.5615011 6.09173837,20.5321861 6.09356743,20.5029211 L6.43762171,14.9980526 C6.4726844,14.4370496 6.93790239,14 7.5,14 Z" fill="#000000" />
+						<path d="M7.5,12 C5.56700338,12 4,9.43299662 4,7.5 C4,5.56700338 5.56700338,3 7.5,3 C9.43299662,3 11,5.56700338 11,7.5 C11,9.43299662 9.43299662,12 7.5,12 Z M7.5095372,4.60103244 L7.56069005,9.94758244 C8.61891495,9.8578583 9.45855912,8.97981222 9.47749614,7.8949109 C9.49728809,6.76103086 8.63275447,4.70470991 7.5095372,4.60103244 Z" fill="#AD0000"/>
+					</g>
+				</svg><!--end::Svg Icon--></span>
+				<div class="brand-title">Merrymeal</div>
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="dashboard_bar">
+                                Members
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/team-3.jpg" width="20" alt=""/>
+									<div class="header-info">
+										<span class="fs-20 font-w500">Manodya Paramee</span>
+										<small>Senior Chef-Hilton</small>
+									</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="../login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="index.php">Menu</a></li>
+							<li><a href="orders-list.html">Orders list</a></li>
+							<li><a href="order-detail.html">Order Detail</a></li>
+							<li><a href="reviews.php">Reviews</a></li>
+                            <li><a href="riders-list.html">Riders</a></li>
+                            <li><a href="ecom-product-order.html">Orders</a></li>
+                            <li><a href="ecom-customers.html">Customers</a></li>
+						</ul>
+                    </li>
+                </ul>
+            
+				
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <p class="mb-0">Details of members and care givers</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Members</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Care givers</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-sm mb-0 table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class=" pr-3">
+													<div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkAll">
+														<label class="custom-control-label" for="checkAll"></label>
+													</div>
+                                                </th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th class=" pl-5" style="min-width: 200px;"> Address
+                                                </th>
+                                                <th>Last Order</th>
+                                                <th>Role</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="customers">
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox1">
+														<label class="custom-control-label" for="checkbox1"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-3">
+                                                                <div class=""><img class="rounded-circle img-fluid"
+                                                                        src="./images/profile/elder.jpg" width="30" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Ricky Antony</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:ricky@example.com">Ricky@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:2012001851">(201) 200-1851</a></td>
+                                                <td class="py-2 pl-5">2392 Main Avenue, Penasauka</td>
+                                                <td class="py-2">30/03/2018</td>
+                                                <td class="py-2 text-right">M</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox2">
+														<label class="custom-control-label" for="checkbox2"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid"
+                                                                    src="./images/profile/wh.jpg" alt="" width="30" />
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">John Watson</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a href="mailto:emma@example.com">Watson@gmail.com</a>
+                                                </td>
+                                                <td class="py-2"> <a href="tel:2122288403">(212) 228-8403</a></td>
+                                                <td class="py-2 pl-5">2289 5th Avenue, New York
+                                                </td>
+                                                <td class="py-2">11/07/2017</td>
+                                                <td class="py-2 text-right">M</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox3">
+														<label class="custom-control-label" for="checkbox3"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <div class=""><img class="rounded-circle img-fluid"
+                                                                        src="./images/profile/Untitled-1.jpg" width="30" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Rowen Atkinson</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a href="mailto:rown@example.com">rowen@gmail.com</a>
+                                                </td>
+                                                <td class="py-2"> <a href="tel:2012001851">(201) 200-1851</a></td>
+                                                <td class="py-2 pl-5">112 Bostwick Avenue, Jersey City
+                                                </td>
+                                                <td class="py-2">05/04/2016</td>
+                                                <td class="py-2 text-right">C</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox4">
+														<label class="custom-control-label" for="checkbox4"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid"
+                                                                    src="./images/profile/images.jfif" alt="" width="30" />
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Antony Hopkins</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:antony@example.com">antony@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:9013243127">(901) 324-3127</a></td>
+                                                <td class="py-2 pl-5">3448 Ile De France St #242, </td>
+                                                <td class="py-2">05/04/2018</td>
+                                                <td class="py-2 text-right"> M</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox5">
+														<label class="custom-control-label" for="checkbox5"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid"
+                                                                    src="./images/profile/Untitled-13.jpg" alt="" width="30" />
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Jennifer Schramm</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:jennifer@example.com">jennifer@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:8283829631">(828) 382-9631</a></td>
+                                                <td class="py-2 pl-5">659 Hannah Street, Charlotte
+                                                </td>
+                                                <td class="py-2">17/03/2016</td>
+                                                <td class="py-2 text-right">C</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+													<div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox6">
+														<label class="custom-control-label" for="checkbox6"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <div class=""><img class="rounded-circle img-fluid"
+                                                                        src="./images/profile/portrait-elderl.jpg" width="30" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Raymond Mims</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:raymond@example.com">mims123@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:5624685646">(562) 468-5646</a></td>
+                                                <td class="py-2 pl-5">2298 Locust Court, Artesia
+                                                </td>
+                                                <td class="py-2">12/07/2014</td>
+                                                <td class="py-2 text-right">M</td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="py-2">
+                                                    <div class="custom-control custom-checkbox mx-2">
+														<input type="checkbox" class="custom-control-input" id="checkbox7">
+														<label class="custom-control-label" for="checkbox7"></label>
+													</div>
+                                                </td>
+                                                <td class="py-3">
+                                                    <a href="#">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid"
+                                                                    src="./images/profile/wh.jpg" alt="" width="30" />
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Michael Jenkins</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2"><a
+                                                        href="mailto:jenkins@example.com">michael@gmail.com</a></td>
+                                                <td class="py-2"> <a href="tel:3026138829">(302) 613-8829</a></td>
+                                                <td class="py-2 pl-5">4678 Maud Street, Philadelphia
+                                                </td>
+                                                <td class="py-2">15/06/2014</td>
+                                                <td class="py-2 text-right">M</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="https://dexignzone.com/" target="_blank">DexignZone</a> 2021</p>
+            </div>
+        </div>
+      
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./js/global.min.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+    <script src="./js/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<!-- Apex Chart -->
+	<script src="./js/apexchart.js"></script>
+
+    <script src="./js/highlight.pack.min.js"></script>
+    <!-- Circle progress -->
+
+
+
+    <script src="./js/deznav-init.js"></script>
+	<script src="./js/demo.js"></script>
+    <script src="./js/styleSwitcher.js"></script>
+</body>
+</html>

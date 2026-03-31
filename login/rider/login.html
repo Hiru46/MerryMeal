@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register and Login</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+	<link href="../css/sweetalert2.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="authincation d-flex flex-column flex-lg-row flex-column-fluid">
+		<div class="login-aside text-center  d-flex flex-column flex-row-auto">
+			<div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
+				<div class="text-center mb-4 pt-5">
+					<img src="../Yx9l.gif" width="214" height="214">
+				</div>
+				<h3 class="mb-2">Welcome back!</h3>
+				<p>To keep connect with us<br>Please login with your details</p>
+			</div>
+			<div class="aside-image" style="background-image:url(images/background/pic1.svg);"></div>
+		</div>
+		<div class="container flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+			<div class="d-flex justify-content-center h-100 align-items-center">
+				<div class="authincation-content style-2">
+					<div class="row no-gutters">
+						<div class="col-xl-12 tab-content">
+							<div id="sign-up" class="auth-form tab-pane fade form-validation">
+								<form id="dz_login_signup_form" class="form-validate" action="actions.php" method ="post">
+									<h3 class="text-center mb-4 text-black">Register Here</h3>
+									<p><strong>Personal Details</strong></p>
+									<div class="form-group">
+										<label class="mb-1 text-black" for="val-Username"><strong>Full Name</strong></label>
+										<div><input type="text" class="form-control" id="Fullname" name="Fullname" placeholder="Enter full Name" required></div>
+											</div>
+												<div class="form-group">
+													<label class="mb-1 text-black" for="Email"><strong>Email</strong></label>
+												<div>
+													<input type="email" class="form-control" id="Email" name="Email" placeholder="Enter Email" required>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="mb-1 text-black" for="Address"><strong>Address</strong></label>
+											<div>
+												<input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Address" required>
+											</div>
+										    </div>
+											<div class="form-group">
+												<label class="mb-1 text-black" for="Contact"><strong>Phone Number</strong></label><div>
+												<input type="text" class="form-control" id="Contact" name="Contact" placeholder="Enter Phone Number" required>
+											</div>
+										    </div>
+											<div class="form-group">
+												<label class="mb-1 text-black"   for="Age"><strong>Age</strong></label>
+												<div>
+													<input type="text" class="form-control" id="Age" name="Age" placeholder="Enter a age.." required>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="mb-1 text-black"   for="NIC"><strong>NIC</strong></label>
+												<div>
+													<input type="text" class="form-control" id="NIC" name="NIC" placeholder="Enter a nic.." required>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="mb-1 text-black"   for="Driverable_Vehicles"><strong>Driverable Vehicles</strong></label>
+												<div>
+													<input type="text" class="form-control" id="Driverable_Vehicles" name="Driverable_Vehicles" placeholder="Enter Vehicles.." required>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="mb-1 text-black"   for="License"><strong>Driver's License</strong></label>
+												<div>
+													<input type="file" class="form-control" id="License" name="License" placeholder="Enter a license.." required>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="mb-1 text-black"   for="Certificate"><strong>Covid Vaccinated Certificate</strong></label>
+												<div>
+													<input type="file" class="form-control" id="Certificate" name="Certificate" placeholder="Enter a certificate.." required>
+												</div>
+											</div>																									
+																			<div class="form-group">
+																				<label class="mb-1 text-black"  for="Password"><strong>Password</strong></label>
+																				<div>
+																					<input type="password" class="form-control"  id="Password" name="Password" placeholder="Enter Password"  required>
+																				</div>
+																			</div> 
+																			<div class="form-group text-center mt-4">
+																				<button type="submit" class="btn btn-primary btn-block" id="dz-signup-submit" href="#sign-up">Register</button>
+																			</div>
+																		</form> 
+											</body>  
+								<div class="new-account mt-3">
+									<p>Already have an account? <a class="text-primary" href="#sign-in" data-toggle="tab">Login</a></p>
+								</div>
+							</div>
+							<div id="sign-in" class="auth-form tab-pane fade show active form-validation">
+								<form id="dz_login_signin_form" class="form-validate">
+									<h3 class="text-center mb-4 text-black">Login your account</h3>
+									<div class="form-group">
+										<label class="mb-1"  for="email"><strong>Email</strong></label>
+										<div>
+											<input type="email" class="form-control"  id="email" name="email" required>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="mb-1"><strong>Password</strong></label>
+										<input type="password" class="form-control" value="password" required>
+									</div>
+									<div class="form-row d-flex justify-content-between mt-4 mb-2">
+										<div class="form-group">
+										   <div class="custom-control custom-checkbox ml-1">
+												<input type="checkbox" class="custom-control-input" id="basic_checkbox_1" required>
+												<label class="custom-control-label" for="basic_checkbox_1">Remember my preference</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<a href="#forgot-password" data-toggle="tab">Forgot Password?</a>
+										</div>
+									</div>
+									<div class="text-center form-group">
+										<a href="./rider_dashboard/index.html"><button type="button" class="btn btn-primary btn-block"  id="dz-signin-submit">Login</button></a>
+									</div>
+								</form>
+								<div class="new-account mt-3">
+									<p>Don't have an account? <a class="text-primary"  href="./register.html">Register</a></p>
+								</div>
+							</div>
+							<div id="forgot-password" class="auth-form tab-pane fade form-validation">
+								<form id="dz_login_forgot_form">
+									<h3 class="text-center mb-4 text-black">Forgot Password</h3>
+									<div class="form-group">
+										<label class="mb-1"  for="password"><strong>Enter Password</strong></label>
+										<div>
+											<input type="password" class="form-control"  id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+										</div>
+									</div>
+									<div class="text-center form-group">
+										<button type="submit"  class="btn btn-primary btn-block">Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--**********************************
+	Scripts
+***********************************-->
+	<!-- Required vendors -->
+	<script src="../js/global.min.js"></script>
+	<script src="../js/bootstrap-select.min.js"></script>
+	<script src="../js/custom.min.js"></script>
+	<script src="../js/sweetalert2.min.js"></script>
+	<!-- Jquery Validation -->
+    <script src="../js/jquery.validate.min.js"></script>
+	
+	<script src="../js/login-form.js"></script>
+	<script src="../js/deznav-init.js"></script>
+</body>
+</html>
+
+
+
+
